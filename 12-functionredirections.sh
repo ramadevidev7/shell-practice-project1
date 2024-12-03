@@ -1,8 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
-TIMESTAMP=$(DATE +%F-%H-%M-%S)
-SCRIPTNAME=$($0 \ cut -d "." -f1)    # $0  is fto find the script name 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPTNAME=$(echo $0 \ cut -d "." -f1)    # $0  is fto find the script name 
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log   #/ creating a log file 
 
 VALIDATE(){
