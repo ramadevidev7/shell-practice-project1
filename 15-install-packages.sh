@@ -30,7 +30,7 @@ fi
 
 # echo "all packages $@"
 
-for i in {1..20}
+for i in $@
 do 
 echo "package to install: $i"
 dnf  list installed $i &>>$LOGFILE   
