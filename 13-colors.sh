@@ -9,13 +9,15 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+echo "script started excecuting at : $TIMESTAMP "
+
 VALIDATE(){
    if [ $1 -ne 0 ]
    then 
-   echo "$2....$R  failure  $N"
+   echo -e "$2....$R  failure  $N"
    exit 1
    else 
-   echo "$2 ....$G  success $N"
+   echo -e "$2 ....$G  success $N"
    fi 
 }
 
