@@ -2,11 +2,11 @@
 
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPTNAME=$(echo $0 \ cut -d "." -f1)    # $0  is fto find the script name 
+SCRIPTNAME=$(echo $0 | cut -d "." -f1)    # $0  is fto find the script name 
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log   #/ creating a log file 
 
 VALIDATE(){
-   if [$1 -ne 0 ]
+   if [ $1 -ne 0 ]
    then 
    echo "$2....failure"
    exit 1
