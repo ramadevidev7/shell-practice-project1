@@ -10,4 +10,9 @@ else
 echo "you are a super user"
 fi
 
-echo "all packages $@"
+# echo "all packages $@"
+
+for i in $@
+do 
+echo "install $i"
+done
