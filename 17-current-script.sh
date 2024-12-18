@@ -1,10 +1,12 @@
 #!/bin/bash
 
-COURSE="deVOPS FROM CURRENT SCRIPT"
+COURSE="DevOps from Current Script"
 
-echo  "BEFORE CALLING OTHER SCRIPTCOURSE : $COURSE"
-echo  "process id of current script: $$"
+echo "Before calling other script, course: $COURSE"
+echo "Process ID of current shell script: $$"
 
-sourse ./16-other-script.sh
+#./16-other-script.sh
 
-echo "after calling other script, course: $COURSE "
+source ./16-other-script.sh
+
+echo "After calling other script, course: $COURSE"
